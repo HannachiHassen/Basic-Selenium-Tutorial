@@ -12,8 +12,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class RadioButtons {
 
 	public static void main(String[] args) {
-		System.setProperty("webdriver.chrome.driver",
-				"C:\\Users\\HASSEN\\workspace\\BasicSelinum_Tutorail_Suite\\Drivers\\chromedriver.exe");
+		String driverPath = System.getProperty("user.dir");
+		System.setProperty("webdriver.chrome.driver", driverPath + "\\Drivers\\chromedriver.exe");
 
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://www.demoqa.com/radio-button");
