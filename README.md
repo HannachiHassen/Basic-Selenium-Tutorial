@@ -7,14 +7,36 @@ Create a script by using Maven Build framework for following steps:
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
 ### Prerequisites
-
-What things you need to install the software and how to install them
-Eclipse or IntelliJ IDEA
-Download Apache Maven
+```
+Developing Software 
+```
+1. Download Java JDK 
+2. Download Eclipse or IntelliJ IDEA
+3. Download Apache Maven
 
 ### Installing
 
-A step by step series to get a development env running 
+A step by step series to get a Development Environment running 
+```
+Download the Java JDK
+```
+1. Download the installer program from Oracle "Download Java" page: https://www.oracle.com/java/technologies/javase-jdk15-downloads.html
+2. Download the correspondents JDK executable file to your OS (Operating System).
+2. Start the Java JDK Installer executable
+3. Select your installation folder
+
+```
+Set up Java JDK envir or change the PATH system variable
+```
+1. In Search, search for and then select: System (Control Panel)
+2. Click the Advanced system settings link.
+3. Click Environment Variables.
+4. Click new and give the follwing name: JAVA_HOME, specify the value of the environment variable to Java JDK file in the Operating System.
+5. In the section System Variables find the PATH environment variable and select it. 
+6. Click Edit. 
+6. In the Edit System Variable (or New System Variable) window, specify the value of the PATH environment variable to the "bin" file of Java JDK path in the OS.
+7. Click OK. Close all remaining windows by clicking OK.
+8. Reopen Command prompt window, and run the command line: java --version
 
 ```
 Download the Eclipse Installer
@@ -25,18 +47,6 @@ Download the Eclipse Installer
 4. Select your installation folder
 5. Launch Eclipse
 
-```
-Install TestNG software on Eclipse
-```
-1. Open Eclipse and go to Helpe tab
-2. In Eclipse, on top menu bar, Under Help Menu, Click on "Install new Software"
-3. Enter the URL: http://dl.bintray.com/testng-team/testng-p2-release at Work With field and click on "Add" button.
-4. Once you click on "Add", it will display the screen, Enter the Name as "TestNG".
-5. After clicking on "OK", it will scan and display the software available with the URL which you have mentioned.
-6. Now select the checkbox at TestNG and Click on "Next" button.
-7. It will check for the requirement and dependencies before starting the installation. If there is any problem with the requirements/dependencies, it will ask you to install them first before continuing with TestNG. Most of the cases it will successfully get installed nothing to worry about it.
-8. Once the above step is done, it will ask you to review the installation details. If your are ready or Ok to install TestNG, click on "Next" to continue.
-9. Accept the Terms of the license agreement and Click on "Finish" button.
 ```
 Installing Apache Maven on Windows
 ```
