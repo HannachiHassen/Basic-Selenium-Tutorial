@@ -24,9 +24,14 @@ public class ScreenShot {
 	public static void takescreenshot(WebDriver driver, String filepath) throws Exception{
 		Date d=new Date();
 		
-		File scrFile=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		TakesScreenshot ts=(TakesScreenshot)driver;
+		File source=ts.getScreenshotAs(OutputType.FILE);
 		File destFile=new File(filepath+d.toString().replace(":", "_") +".png");
-		FileUtils.copyFile(scrFile, destFile);
+		FileUtils.copyFile(source, destFile);
+		
+		System.out.println("**********************************");
+		System.out.println("ScreenShot stored at: " + filepath);
+		System.out.println("**********************************");
 	}
 	
 	
