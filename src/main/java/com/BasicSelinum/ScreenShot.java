@@ -23,6 +23,7 @@ public class ScreenShot {
 	}
 
 	public static void takescreenshot(WebDriver driver, String filepath) throws Exception{
+		
 		String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());// time stamp
 		
 		TakesScreenshot ts=(TakesScreenshot)driver;
