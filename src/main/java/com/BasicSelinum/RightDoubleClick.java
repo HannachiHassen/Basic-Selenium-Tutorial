@@ -31,7 +31,7 @@ public class RightDoubleClick {
 
 		// Right Click the button to display Context Menu&nbsp;
 		actions.contextClick(rightBtn).perform();
-
+	
 		System.out.println("Right click Context Menu displayed");
 
 		// Retrieve WebElement to perform double click WebElement

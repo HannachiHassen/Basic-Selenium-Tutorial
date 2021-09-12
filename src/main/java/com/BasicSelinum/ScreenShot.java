@@ -26,9 +26,16 @@ public class ScreenShot {
 		
 		String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());// time stamp
 		
+		//File source=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		//FileUtils.copyFile(source, new File=(filepath));
+		
+		//Convert web driver object to TakeScreenshot
 		TakesScreenshot ts=(TakesScreenshot)driver;
+		//Call getScreenshotAs method to create image file
 		File source=ts.getScreenshotAs(OutputType.FILE);
+		//Move image file to new destination
 		File destFile=new File(filepath+timeStamp.toString().replace(":", "_") +".png");
+		//Copy file at destination
 		FileUtils.copyFile(source, destFile);
 		
 		System.out.println("**********************************");
