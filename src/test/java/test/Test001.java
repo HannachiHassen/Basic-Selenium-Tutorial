@@ -1,9 +1,9 @@
-package selenium;
+package test;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import selenium.RetryCountIfFailed;
+import lib.RetryCountIfFailed;
 
 public class Test001 {
 	

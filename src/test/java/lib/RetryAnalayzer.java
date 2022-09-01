@@ -3,8 +3,6 @@ package lib;
 import org.testng.IRetryAnalyzer;
 import org.testng.ITestResult;
 
-import selenium.RetryCountIfFailed;
-
 public class RetryAnalayzer implements IRetryAnalyzer {
 	int counter = 0;
 
