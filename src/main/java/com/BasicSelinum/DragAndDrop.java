@@ -25,14 +25,14 @@ public class DragAndDrop {
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		
 		// Actions class method to drag and drop
-		Actions builder = new Actions(driver);
+		Actions act = new Actions(driver);
 
 		WebElement from = driver.findElement(By.id("draggable"));
 		
 		WebElement to = driver.findElement(By.id("droppable"));
 		
 		// Perform drag and drop
-		builder.dragAndDrop(from, to).perform();
+		act.dragAndDrop(from, to).perform();
 
 		// verify text changed in to 'Drop here' box
 		String textTo = to.getText();
