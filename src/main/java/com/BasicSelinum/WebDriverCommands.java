@@ -11,7 +11,7 @@ public class WebDriverCommands {
 		
 		// Create a new instance of the FireFox driver
 		WebDriver driver = new ChromeDriver();
-
+		
 		// Storing the Application Url in the String variable
 		String url = "https://www.demoqa.com";
 

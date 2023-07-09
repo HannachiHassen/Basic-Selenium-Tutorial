@@ -34,6 +34,11 @@ public class DragAndDrop {
 		// Perform drag and drop
 		act.dragAndDrop(from, to).perform();
 
+		act.clickAndHold(from).moveToElement(to)
+		   .release()
+		   .build()
+		   .perform();
+		
 		// verify text changed in to 'Drop here' box
 		String textTo = to.getText();
 
